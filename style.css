@@ -11,6 +11,8 @@ li {
 }
 p {
   color: var(--Grayish_Blue);
+  letter-spacing: 0.5px;
+  line-height: 1.5;
 }
 h1,
 h2 {
@@ -189,6 +191,10 @@ img {
   padding-top: 4rem;
   gap: 7rem;
 }
+.detaill:nth-child(2),
+.detaill:nth-child(3) {
+  display: none;
+}
 .detaill img {
   object-fit: cover;
   height: 39vh;
@@ -213,4 +219,21 @@ img {
   border-radius: 7px;
   cursor: pointer;
   color: var(--White);
+}
+
+/* **** Styling the Extension Desktop ***** */
+
+.app__extensions {
+  padding: 2rem 10.6rem;
+}
+.extension__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.extension__header p {
+  width: 54%;
+  text-align: center;
 }
