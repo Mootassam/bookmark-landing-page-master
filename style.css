@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap");
+
+body {
+  font-size: 18px;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+li {
+  list-style: none;
+  color: var(--Very_Dark_Blue);
+  cursor: pointer;
+}
+img {
+  cursor: pointer;
+}
+
+/* Styling the Desktop menue  */
+
+.app__menue {
+  display: flex;
+  width: 100%;
+  padding: 3rem 7rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.menue__nav ul {
+  display: flex;
+  width: 100%;
+  gap: 2rem;
+  align-items: center;
+}
+.menue__nav ul li:last-child {
+  background-color: var(--Soft_Red);
+  padding: 0.7rem 2rem;
+  color: var(--White);
+  font-weight: 500;
+  border-radius: 7px;
+}
+.menue__nav ul li:last-child:hover {
+  background-color: transparent;
+  border: 1px solid var(--Soft_Red);
+  color: var(--Soft_Red);
+}
+.menue__nav ul li:hover {
+  color: var(--Soft_Red);
+}
+
+/* Styling Header Desktop */
+.app__header {
+  display: flex;
+  padding: 3rem 4rem 3rem 7rem;
+  width: 100%;
+}
+.header__left,
+.header__right {
+  flex-basis: 50%;
+}
+
+.header__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+.header__left h1 {
+  color: var(--Very_Dark_Blue);
+  font-size: 40px;
+  letter-spacing: -1px;
+}
+.header__left p {
+  color: var(--Grayish_Blue);
+}
+.left__buttons {
+  display: flex;
+  gap: 1rem;
+}
+.button__chrom,
+.button__firefox {
+  padding: 1rem 1.5rem;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.button__chrom {
+  background-color: var(--Soft_Blue);
+  color: var(--White);
+}
+.button__chrom:hover {
+  background-color: transparent;
+  border: 1px solid var(--Soft_Blue);
+  color: var(--Soft_Blue);
+}
+.button__firefox {
+  background-color: var(--background__button);
+  color: var(--Very_Dark_Blue);
+}
+.button__firefox:hover {
+  background-color: transparent;
+  border: 1px solid var(--Grayish_Blue);
+  color: var(--Grayish_Blue);
+}
+.header__right {
+  background-image: url(./images/illustration-hero.svg);
+  height: auto;
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
