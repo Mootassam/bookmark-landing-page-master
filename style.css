@@ -237,3 +237,53 @@ img {
   width: 54%;
   text-align: center;
 }
+
+.extension__browsers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  align-items: center;
+  padding: 0 4rem;
+}
+.extension__browsers > div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  align-content: center;
+  padding: 3rem 2rem 2rem 2rem;
+  gap: 1rem;
+  border: 0;
+  box-shadow: -3px 1px 25px 7px var(--background__extenstions);
+  border-radius: 7px;
+  text-align: center;
+  height: max-content;
+}
+.extension__browsers > div:nth-child(2) {
+  margin-top: 6rem;
+}
+.extensions__opera {
+  margin-top: 12rem;
+}
+.extension__browsers img {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  padding: 0;
+}
+.extensions__bar {
+  background-image: url(./images/bg-dots.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 1vh;
+  padding: 1.7rem 0 0 0;
+}
+.extensions__button {
+  width: max-content;
+  background-color: var(--Soft_Blue);
+  color: var(--White);
+  padding: 0.7rem 2rem;
+  border-radius: 7px;
+  cursor: pointer;
+}
