@@ -34,7 +34,7 @@ img {
 .app__menue {
   display: flex;
   width: 100%;
-  padding: 3rem 10.6rem;
+  padding: 3.2rem 10.6rem 3rem 10.6rem;
   justify-content: space-between;
   align-items: center;
 }
@@ -43,6 +43,10 @@ img {
   width: 100%;
   gap: 2.5rem;
   align-items: center;
+}
+.menue__nav ul li {
+  font-size: 14px;
+  text-transform: uppercase;
 }
 .menue__nav ul li:last-child {
   background-color: var(--Soft_Red);
@@ -72,7 +76,7 @@ img {
 }
 
 .header__left {
-  margin-top: 3rem;
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -86,6 +90,7 @@ img {
 }
 .header__left p {
   color: var(--Grayish_Blue);
+  width: 80%;
 }
 .left__buttons {
   display: flex;
@@ -124,7 +129,6 @@ img {
   background-position: right;
   background-size: contain;
   z-index: 90;
-  position: relative;
 }
 
 .header__background {
@@ -146,11 +150,11 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 3rem 10.6rem;
+  padding: 1rem 10.6rem;
 }
 .app__feature > p {
   padding: 1rem;
-  width: 70%;
+  width: 55%;
   text-align: center;
 }
 
@@ -209,5 +213,4 @@ img {
   border-radius: 7px;
   cursor: pointer;
   color: var(--White);
-  font-weight: 700;
 }
