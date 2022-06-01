@@ -18,7 +18,7 @@ img {
 .app__menue {
   display: flex;
   width: 100%;
-  padding: 3rem 7rem;
+  padding: 3rem 10rem;
   justify-content: space-between;
   align-items: center;
 }
@@ -76,6 +76,7 @@ img {
 }
 .button__chrom,
 .button__firefox {
+  width: max-content;
   padding: 1rem 1.5rem;
   border-radius: 7px;
   cursor: pointer;
