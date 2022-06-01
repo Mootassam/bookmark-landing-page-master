@@ -28,6 +28,7 @@ img {
   gap: 2rem;
   align-items: center;
 }
+
 .menue__nav ul li:last-child {
   background-color: var(--Soft_Red);
   padding: 0.7rem 2rem;
