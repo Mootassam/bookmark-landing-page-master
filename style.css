@@ -35,7 +35,7 @@ img {
 .app__menue {
   display: flex;
   width: 100%;
-  padding: 3.05rem 9rem 3rem 9rem;
+  padding: 3.07rem 9rem 3rem 9rem;
   justify-content: space-between;
   align-items: center;
   width: min(1400px, 95%);
@@ -71,7 +71,7 @@ img {
 /* **** Styling Header Desktop **** */
 .app__header {
   display: flex;
-  padding: 3.5rem 4rem 3rem 9rem;
+  padding: 3.5rem 1rem 3rem 9rem;
   width: min(1400px, 95%);
   margin-inline: auto;
   justify-content: center;
@@ -82,7 +82,7 @@ img {
 }
 
 .header__left {
-  margin-top: 4rem;
+  margin-top: 4.6rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -139,6 +139,7 @@ img {
   width: 100%;
   height: auto;
   z-index: 99;
+  right: 0;
 }
 
 .header__background {
