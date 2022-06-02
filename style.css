@@ -35,7 +35,7 @@ img {
 .app__menue {
   display: flex;
   width: 100%;
-  padding: 3.07rem 9rem 3rem 9rem;
+  padding: 3.08rem 8.6rem 3rem 8.6rem;
   justify-content: space-between;
   align-items: center;
   width: min(1400px, 95%);
@@ -71,7 +71,7 @@ img {
 /* **** Styling Header Desktop **** */
 .app__header {
   display: flex;
-  padding: 3.5rem 1rem 7rem 9rem;
+  padding: 3.5rem 1rem 6rem 9rem;
   width: min(1400px, 95%);
   margin-inline: auto;
   justify-content: center;
@@ -146,7 +146,7 @@ img {
   position: absolute;
   background-color: var(--Soft_Blue);
   width: 40%;
-  height: 50vh;
+  height: 42vh;
   z-index: 0;
   right: 0;
   border-radius: 0% 0 0 60%;
@@ -161,7 +161,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1rem 9rem;
+  padding: 1rem 8.6rem;
   width: min(1400px, 95%);
   margin-inline: auto;
 }
