@@ -192,12 +192,11 @@ img {
 
 .feature_tabs_detaills {
   display: flex;
-  flex-direction: column;
   width: 100%;
+  flex-direction: column;
 }
+
 .detaill {
-  position: relative;
-  flex: 0 0 auto;
   display: flex;
   padding-top: 4rem;
   gap: 7rem;
@@ -206,9 +205,12 @@ img {
 .detaill:nth-child(3) {
   display: none;
 }
-.detaill img {
-  object-fit: cover;
-  height: 39vh;
+
+.detaill__left,
+.detaill__right {
+  flex-basis: 50%;
+  width: 100%;
+  height: auto;
 }
 
 .detaill__right {
