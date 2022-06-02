@@ -30,10 +30,7 @@ img {
   width: 100%;
   display: flex;
   flex-direction: column;
-
   overflow: hidden;
-  width: min(1400px, 95%);
-  margin-inline: auto;
 }
 .app__menue {
   display: flex;
@@ -41,6 +38,8 @@ img {
   padding: 3.2rem 10.6rem 3rem 10.6rem;
   justify-content: space-between;
   align-items: center;
+  width: min(1400px, 95%);
+  margin-inline: auto;
 }
 .menue__nav ul {
   display: flex;
@@ -61,7 +60,8 @@ img {
 }
 .menue__nav ul li:last-child:hover {
   background-color: transparent;
-  border: 1px solid var(--Soft_Red);
+  outline: 1px solid var(--Soft_Red);
+  outline-offset: -1px;
   color: var(--Soft_Red);
 }
 .menue__nav ul li:hover {
@@ -73,6 +73,8 @@ img {
   display: flex;
   padding: 3.5rem 4rem 3rem 10.6rem;
   width: 100%;
+  width: min(1400px, 95%);
+  margin-inline: auto;
 }
 .header__left,
 .header__right {
@@ -114,7 +116,8 @@ img {
 }
 .button__chrom:hover {
   background-color: transparent;
-  border: 1px solid var(--Soft_Blue);
+  outline: 1px solid var(--Soft_Blue);
+  outline-offset: -1px;
   color: var(--Soft_Blue);
 }
 .button__firefox {
@@ -123,16 +126,17 @@ img {
 }
 .button__firefox:hover {
   background-color: transparent;
-  border: 1px solid var(--Grayish_Blue);
+  outline: 1px solid var(--Grayish_Blue);
+  outline-offset: -1px;
   color: var(--Grayish_Blue);
 }
 .header__right {
   background-image: url(./images/illustration-hero.svg);
-  height: 50vh;
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
   z-index: 90;
+  height: auto;
 }
 
 .header__background {
@@ -155,6 +159,8 @@ img {
   justify-content: center;
   align-items: center;
   padding: 1rem 10.6rem;
+  width: min(1400px, 95%);
+  margin-inline: auto;
 }
 .app__feature > p {
   padding: 1rem;
@@ -227,6 +233,12 @@ img {
 
 .app__extensions {
   padding: 2rem 10.6rem;
+  width: min(1400px, 95%);
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .extension__header {
   display: flex;
@@ -296,6 +308,8 @@ img {
   width: 40%;
   flex-direction: column;
   margin: auto;
+  width: min(1400px, 40%);
+  margin-inline: auto;
 }
 .questions__header {
   text-align: center;
@@ -341,6 +355,7 @@ img {
   gap: 1rem;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .app__prefooter p,
@@ -348,6 +363,32 @@ h1 {
   color: var(--White);
   width: 42%;
   text-align: center;
+}
+
+.prefooter__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  gap: 1rem;
+}
+input {
+  border: 0;
+  border-radius: 4px;
+  padding: 1rem 2rem;
+}
+.form__button {
+  padding: 0.9rem 1.3rem;
+  cursor: pointer;
+  color: var(--White);
+  background-color: var(--Soft_Red);
+  border-radius: 4px;
+}
+.form__button:hover {
+  outline: 1px solid var(--Soft_Red);
+  outline-offset: -1px;
+  background-color: var(--White);
+  color: var(--Soft_Red);
 }
 
 /* Styling the footer Desktop */
