@@ -35,7 +35,7 @@ img {
 .app__menue {
   display: flex;
   width: 100%;
-  padding: 3.1rem 9rem 3rem 9rem;
+  padding: 3.05rem 9rem 3rem 9rem;
   justify-content: space-between;
   align-items: center;
   width: min(1400px, 95%);
@@ -87,15 +87,16 @@ img {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 1.3rem;
+  gap: 1rem;
 }
 .header__left > h1 {
   color: var(--Very_Dark_Blue);
-  font-size: 50px;
+  font-size: 45px;
   letter-spacing: -1px;
   line-height: 1.2;
   text-align: start;
   width: 100%;
+  font-weight: 500;
 }
 .header__left p {
   color: var(--Grayish_Blue);
@@ -133,13 +134,11 @@ img {
   outline-offset: -1px;
   color: var(--Grayish_Blue);
 }
+
 .header__right {
-  background-image: url(./images/illustration-hero.svg);
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: contain;
-  z-index: 90;
+  width: 100%;
   height: auto;
+  z-index: 99;
 }
 
 .header__background {
