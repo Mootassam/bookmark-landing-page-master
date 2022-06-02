@@ -13,6 +13,7 @@ p {
   color: var(--Grayish_Blue);
   letter-spacing: 0.5px;
   line-height: 1.5;
+  opacity: 85%;
 }
 h1,
 h2 {
@@ -35,7 +36,7 @@ img {
 .app__menue {
   display: flex;
   width: 100%;
-  padding: 3.08rem 8.6rem 3rem 8.6rem;
+  padding: 3.08rem 8.3rem 2.8rem 8.3rem;
   justify-content: space-between;
   align-items: center;
   width: min(1400px, 95%);
@@ -53,16 +54,18 @@ img {
 }
 .menue__nav ul li:last-child {
   background-color: var(--Soft_Red);
-  padding: 0.7rem 2rem;
+  padding: 0.6rem 1.7rem;
   color: var(--White);
   border-radius: 7px;
   font-size: 16px;
+  box-shadow: 0 2px 3px 1px rgb(0 0 0 / 10%);
 }
 .menue__nav ul li:last-child:hover {
   background-color: transparent;
   outline: 1px solid var(--Soft_Red);
   outline-offset: -1px;
   color: var(--Soft_Red);
+  transition: 0.4s ease;
 }
 .menue__nav ul li:hover {
   color: var(--Soft_Red);
@@ -71,7 +74,7 @@ img {
 /* **** Styling Header Desktop **** */
 .app__header {
   display: flex;
-  padding: 3.5rem 1rem 6rem 9rem;
+  padding: 3.5rem 1rem 6rem 8.3rem;
   width: min(1400px, 95%);
   margin-inline: auto;
   justify-content: center;
@@ -87,12 +90,12 @@ img {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 1rem;
+  gap: 1.3rem;
 }
 .header__left > h1 {
   color: var(--Very_Dark_Blue);
   font-size: 45px;
-  letter-spacing: -1px;
+  letter-spacing: -0.5px;
   line-height: 1.2;
   text-align: start;
   width: 100%;
@@ -109,10 +112,10 @@ img {
 .button__chrom,
 .button__firefox {
   width: max-content;
-  padding: 1rem 1.5rem;
+  padding: 0.8rem 1.5rem;
   border-radius: 7px;
   cursor: pointer;
-  font-weight: bold;
+  box-shadow: 0 2px 3px 1px rgb(0 0 0 / 10%);
 }
 .button__chrom {
   background-color: var(--Soft_Blue);
@@ -123,6 +126,7 @@ img {
   outline: 1px solid var(--Soft_Blue);
   outline-offset: -1px;
   color: var(--Soft_Blue);
+  transition: 0.4s ease;
 }
 .button__firefox {
   background-color: var(--background__button);
@@ -133,6 +137,7 @@ img {
   outline: 1px solid var(--Grayish_Blue);
   outline-offset: -1px;
   color: var(--Grayish_Blue);
+  transition: 0.4s ease;
 }
 
 .header__right {
@@ -222,7 +227,6 @@ img {
 }
 .detaill__right p {
   letter-spacing: 0.5px;
-  line-height: 1.7;
 }
 
 .detaill__button {
