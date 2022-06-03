@@ -40,7 +40,7 @@ img {
 .app__menue {
   display: flex;
   width: 100%;
-  padding: 3.2rem 8.2rem 2.94rem 8.2rem;
+  padding: 3.2rem 8.2rem 3.1rem 8.2rem;
   justify-content: space-between;
   align-items: center;
   width: min(1400px, 95%);
@@ -265,7 +265,7 @@ img {
 /* **** Styling the Extension Desktop ***** */
 
 .app__extensions {
-  padding: 10rem 9rem 6rem;
+  padding: 10rem 9rem 8rem;
   width: min(1400px, 95%);
   margin-inline: auto;
   display: flex;
@@ -297,12 +297,11 @@ img {
 }
 .extension__browsers > div {
   display: flex;
-
   flex-direction: column;
   width: 100%;
   align-items: center;
   align-content: center;
-  padding: 3rem 1rem 2rem;
+  padding: 3rem 1.5rem 2rem;
   gap: 1rem;
   border: 0;
   box-shadow: 0 5px 10px 0px rgb(0 0 0 / 10%);
