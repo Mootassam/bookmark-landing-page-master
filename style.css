@@ -147,17 +147,21 @@ img {
   height: auto;
   z-index: 99;
   right: 0;
+  position: relative;
 }
-
-.header__background {
-  position: absolute;
+.header__right::before {
+  content: "";
   background-color: var(--Soft_Blue);
-  width: 40%;
-  height: 42vh;
+  width: 85%;
+  height: 75%;
   z-index: 0;
   right: 0;
-  border-radius: 0% 0 0 60%;
+  border-radius: 0% 0 0 40%;
   margin-top: 8rem;
+  position: absolute;
+  z-index: -1;
+  float: right;
+  margin-right: -4rem;
 }
 
 /* ****Styling the Feature Desktop **** */
@@ -220,8 +224,19 @@ img {
 .detaill__left,
 .detaill__right {
   flex-basis: 50%;
-  width: 100%;
+  position: relative;
   height: auto;
+}
+.detaill__left::before {
+  content: "";
+  background-color: var(--Soft_Blue);
+  width: 116%;
+  height: 90%;
+  position: absolute;
+  z-index: -1;
+
+  border-radius: 0% 0 40% 0;
+  margin: 5rem 0 6rem -8.6rem;
 }
 
 .detaill__right {
@@ -366,7 +381,7 @@ img {
 /* Stlying the prefooter Desktop  */
 .app__prefooter {
   background-color: var(--Soft_Blue);
-  padding: 7rem 0;
+  padding: 5rem 0;
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
