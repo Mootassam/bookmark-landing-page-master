@@ -15,6 +15,10 @@ p {
   line-height: 1.5;
   opacity: 85%;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 h1,
 h2 {
   color: var(--Very_Dark_Blue);
@@ -58,6 +62,8 @@ img {
   letter-spacing: 1.2px;
 }
 .menue__nav ul li:last-child {
+  display: inline-block;
+
   background-color: var(--Soft_Red);
   padding: 0.6rem 1.7rem;
   color: var(--White);
