@@ -161,8 +161,8 @@ img {
   height: 75%;
   z-index: 0;
   right: 0;
-  border-radius: 0% 0 0 40%;
-  margin-top: 8.5rem;
+  border-radius: 0% 0 0 35%;
+  margin-top: 8.7rem;
   position: absolute;
   z-index: -1;
   float: right;
@@ -207,7 +207,7 @@ img {
 }
 .feature_tabs div:nth-child(1) {
   color: var(--Very_Dark_Blue);
-  border-bottom: 2.5px solid var(--Soft_Red);
+  border-bottom: 2px solid var(--Soft_Red);
 }
 
 .feature_tabs_detaills {
@@ -240,8 +240,8 @@ img {
   height: 100%;
   position: absolute;
   z-index: -1;
-  border-radius: 0% 0 40% 0;
-  margin: 5rem 0 6rem -8.6rem;
+  border-radius: 0% 0 35% 0;
+  margin: 5.5rem 0 6rem -9rem;
 }
 
 .detaill__right {
@@ -268,7 +268,7 @@ img {
 /* **** Styling the Extension Desktop ***** */
 
 .app__extensions {
-  padding: 10rem 9rem 7rem;
+  padding: 10rem 9rem 8rem;
   width: min(1400px, 95%);
   margin-inline: auto;
   display: flex;
@@ -383,7 +383,7 @@ img {
 }
 
 .questions > div {
-  border-bottom: 0.3px solid var(--Grayish_Blue);
+  border-bottom: 0.1px solid var(--Grayish_Blue);
   cursor: pointer;
   width: auto;
   padding: 1.3rem 0;
