@@ -157,7 +157,7 @@ img {
 .header__right::before {
   content: "";
   background-color: var(--Soft_Blue);
-  width: 85%;
+  width: 80%;
   height: 75%;
   z-index: 0;
   right: 0;
