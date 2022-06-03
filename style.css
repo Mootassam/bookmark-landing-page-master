@@ -177,7 +177,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1rem 8.6rem 6rem;
+  padding: 1rem 8.6rem 5rem;
   width: min(1400px, 95%);
   margin-inline: auto;
 }
@@ -189,7 +189,7 @@ img {
 }
 
 .feature_tabs {
-  margin-top: 1.5rem;
+  margin-top: 1.6rem;
   display: flex;
   gap: 4rem;
   border-bottom: 0.1px solid var(--Grayish_Blue);
@@ -219,7 +219,7 @@ img {
 
 .detaill {
   display: flex;
-  padding-top: 4rem;
+  padding-top: 3.5rem;
   gap: 7rem;
 }
 .detaill:nth-child(2),
@@ -259,7 +259,7 @@ img {
 .detaill__button {
   width: max-content;
   background-color: var(--Soft_Blue);
-  padding: 0.8rem 1rem;
+  padding: 0.9rem 1.2rem;
   border-radius: 7px;
   cursor: pointer;
   color: var(--White);
@@ -383,13 +383,14 @@ img {
 }
 
 .questions > div {
-  border-bottom: 1px solid var(--Very_Dark_Blue);
+  border-bottom: 0.3px solid var(--Grayish_Blue);
   cursor: pointer;
   width: auto;
-  padding: 1.5rem 0;
+  padding: 1.3rem 0;
+  font-weight: 400;
 }
 .questions > div:nth-child(1) {
-  border-top: 0.3px solid var(--Very_Dark_Blue);
+  border-top: 0.3px solid var(--Grayish_Blue);
 }
 
 .question span {
