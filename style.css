@@ -53,7 +53,7 @@ img {
   align-items: center;
 }
 .menue__nav ul li {
-  font-size: 11px;
+  font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 1.2px;
 }
@@ -162,7 +162,7 @@ img {
   z-index: 0;
   right: 0;
   border-radius: 0% 0 0 35%;
-  margin-top: 8.7rem;
+  margin-top: 8.9rem;
   position: absolute;
   z-index: -1;
   float: right;
@@ -236,12 +236,13 @@ img {
 .detaill__left::before {
   content: "";
   background-color: var(--Soft_Blue);
-  width: 116%;
+  width: 122%;
   height: 100%;
   position: absolute;
+  left: 0;
   z-index: -1;
   border-radius: 0% 0 35% 0;
-  margin: 5.5rem 0 6rem -9rem;
+  margin: 5.5rem 0 6rem -12rem;
 }
 
 .detaill__right {
@@ -268,7 +269,7 @@ img {
 /* **** Styling the Extension Desktop ***** */
 
 .app__extensions {
-  padding: 10rem 9rem 8rem;
+  padding: 10rem 9rem 8.5rem;
   width: min(1400px, 95%);
   margin-inline: auto;
   display: flex;
@@ -304,7 +305,7 @@ img {
   width: 100%;
   align-items: center;
   align-content: center;
-  padding: 3rem 1.5rem 2rem;
+  padding: 3rem 1.8rem 1.5rem;
   gap: 1rem;
   border: 0;
   box-shadow: 0 5px 10px 0px rgb(0 0 0 / 10%);
@@ -408,8 +409,8 @@ img {
 .app__questions > div:nth-child(3) {
   align-self: center;
   justify-self: center;
-  margin-top: 3rem;
-  margin-bottom: 5rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 /* Stlying the prefooter Desktop  */
