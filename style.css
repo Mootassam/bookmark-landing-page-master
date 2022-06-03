@@ -100,20 +100,21 @@ img {
 .header__left > h1 {
   color: var(--Very_Dark_Blue);
   font-size: 45px;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.1px;
   line-height: 1.2;
   text-align: start;
   width: 100%;
-  font-weight: 500;
+  font-weight: 700;
 }
 .header__left p {
   color: var(--Grayish_Blue);
-  width: 100%;
+  width: 90%;
 }
 .left__buttons {
   display: flex;
   gap: 1rem;
   font-size: 14px;
+  padding: 1rem 0 0;
 }
 .button__chrom,
 .button__firefox {
@@ -161,7 +162,7 @@ img {
   z-index: 0;
   right: 0;
   border-radius: 0% 0 0 40%;
-  margin-top: 8rem;
+  margin-top: 8.5rem;
   position: absolute;
   z-index: -1;
   float: right;
@@ -188,7 +189,7 @@ img {
 }
 
 .feature_tabs {
-  margin-top: 1.3rem;
+  margin-top: 1.5rem;
   display: flex;
   gap: 4rem;
   border-bottom: 0.1px solid var(--Grayish_Blue);
@@ -213,6 +214,7 @@ img {
   display: flex;
   width: 100%;
   flex-direction: column;
+  padding-top: 1rem;
 }
 
 .detaill {
@@ -246,8 +248,9 @@ img {
   display: flex;
   flex-direction: column;
   text-align: start;
-  margin: auto;
+  align-content: center;
   gap: 1.5rem;
+  margin: auto;
 }
 .detaill__right p {
   letter-spacing: 0.5px;
@@ -265,7 +268,7 @@ img {
 /* **** Styling the Extension Desktop ***** */
 
 .app__extensions {
-  padding: 10rem 9rem 8rem;
+  padding: 10rem 9rem 7rem;
   width: min(1400px, 95%);
   margin-inline: auto;
   display: flex;
