@@ -57,7 +57,7 @@ img {
   align-items: center;
 }
 .menue__nav ul li {
-  font-size: 12px;
+  font-size: 11.5px;
   text-transform: uppercase;
   letter-spacing: 1.2px;
 }
@@ -275,7 +275,7 @@ img {
 /* **** Styling the Extension Desktop ***** */
 
 .app__extensions {
-  padding: 10rem 9rem 8.5rem;
+  padding: 10rem 9rem 8.92rem;
   width: min(1400px, 95%);
   margin-inline: auto;
   display: flex;
@@ -433,14 +433,19 @@ img {
 .app__prefooter p,
 h1 {
   color: var(--White);
-  width: 35%;
+  width: 30%;
   text-align: center;
+}
+.app__prefooter h1 {
+  font-size: 30px;
+  font-weight: 500;
 }
 
 .app__prefooter p {
-  letter-spacing: 1.6px;
+  letter-spacing: 3px;
   text-transform: uppercase;
   opacity: 98%;
+  font-size: 14px;
 }
 .prefooter__form {
   display: flex;
