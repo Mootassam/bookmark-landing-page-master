@@ -21,6 +21,7 @@ h2 {
 }
 h2 {
   font-size: 33px;
+  font-weight: 500;
 }
 img {
   cursor: pointer;
@@ -36,7 +37,7 @@ img {
 .app__menue {
   display: flex;
   width: 100%;
-  padding: 3.08rem 8.3rem 2.8rem 8.3rem;
+  padding: 3.09rem 8.2rem 2.88rem 8.2rem;
   justify-content: space-between;
   align-items: center;
   width: min(1400px, 95%);
@@ -45,19 +46,20 @@ img {
 .menue__nav ul {
   display: flex;
   width: 100%;
-  gap: 2.5rem;
+  gap: 2.8rem;
   align-items: center;
 }
 .menue__nav ul li {
-  font-size: 14px;
+  font-size: 12px;
   text-transform: uppercase;
+  letter-spacing: 0.6px;
 }
 .menue__nav ul li:last-child {
   background-color: var(--Soft_Red);
   padding: 0.6rem 1.7rem;
   color: var(--White);
-  border-radius: 7px;
-  font-size: 16px;
+  border-radius: 4px;
+
   box-shadow: 0 2px 3px 1px rgb(0 0 0 / 10%);
 }
 .menue__nav ul li:last-child:hover {
@@ -74,7 +76,7 @@ img {
 /* **** Styling Header Desktop **** */
 .app__header {
   display: flex;
-  padding: 3.5rem 1rem 6rem 8.3rem;
+  padding: 3.5rem 1rem 6rem 8.2rem;
   width: min(1400px, 95%);
   margin-inline: auto;
   justify-content: center;
@@ -85,7 +87,7 @@ img {
 }
 
 .header__left {
-  margin-top: 4.6rem;
+  margin-top: 4.8rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -170,8 +172,9 @@ img {
   width: min(1400px, 95%);
   margin-inline: auto;
 }
+
 .app__feature > p {
-  padding: 1rem;
+  padding: 1.5rem 0;
   width: 55%;
   text-align: center;
 }
@@ -190,9 +193,12 @@ img {
   color: var(--Grayish_Blue);
   cursor: pointer;
 }
+.feature_tabs div:hover {
+  color: var(--Soft_Red);
+}
 .feature_tabs div:nth-child(1) {
   color: var(--Very_Dark_Blue);
-  border-bottom: 3.5px solid var(--Soft_Red);
+  border-bottom: 2.5px solid var(--Soft_Red);
 }
 
 .feature_tabs_detaills {
