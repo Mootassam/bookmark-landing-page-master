@@ -370,7 +370,7 @@ img {
   border-bottom: 1px solid var(--Very_Dark_Blue);
   cursor: pointer;
   width: auto;
-  padding: 1rem 0;
+  padding: 1.5rem 0;
 }
 .questions > div:nth-child(1) {
   border-top: 0.3px solid var(--Very_Dark_Blue);
@@ -386,6 +386,12 @@ img {
 }
 .answer {
   display: none;
+}
+
+.app__questions > div:nth-child(3) {
+  align-self: center;
+  justify-self: center;
+  margin-top: 3rem;
 }
 
 /* Stlying the prefooter Desktop  */
