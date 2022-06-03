@@ -286,7 +286,7 @@ img {
 .extension__browsers {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 3rem;
+  gap: 2rem;
   align-items: center;
   padding: 0 4rem;
 }
@@ -296,19 +296,23 @@ img {
   width: 100%;
   align-items: center;
   align-content: center;
-  padding: 3rem 2rem 2rem 2rem;
+  padding: 3rem 1rem 2rem;
   gap: 1rem;
   border: 0;
-  box-shadow: -3px 1px 25px 7px var(--background__extenstions);
+  box-shadow: 0 5px 10px 0px rgb(0 0 0 / 10%);
   border-radius: 7px;
   text-align: center;
   height: max-content;
+  position: relative;
+}
+.extension__browsers > div:nth-child(1) {
+  top: 3rem;
 }
 .extension__browsers > div:nth-child(2) {
-  margin-top: 6rem;
+  top: 6rem;
 }
 .extensions__opera {
-  margin-top: 12rem;
+  top: 8.5rem;
 }
 .extension__browsers img {
   width: 100px;
