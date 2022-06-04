@@ -15,6 +15,14 @@ p {
   line-height: 1.5;
   opacity: 85%;
 }
+@media screen and (max-width: 1300px) {
+  body {
+    font-size: 14px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
 a {
   text-decoration: none;
   color: inherit;
@@ -80,6 +88,23 @@ img {
 }
 .menue__nav ul li:hover {
   color: var(--Soft_Red);
+}
+.menue__mobile {
+  display: none;
+}
+
+/* Styling the mobile Version */
+@media (max-width: 1300px) {
+  .app__menue {
+    flex-direction: row;
+    padding: 2rem 1rem;
+  }
+  .menue__nav {
+    display: none;
+  }
+  .menue__mobile {
+    display: flex;
+  }
 }
 
 /* **** Styling Header Desktop **** */
@@ -173,6 +198,64 @@ img {
   z-index: -1;
   float: right;
   margin-right: -4rem;
+}
+
+/* ****Styling the header verion Mobile ***** */
+
+@media (max-width: 1300px) {
+  .app__header {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+    text-align: center;
+  }
+  .header__left,
+  .header__right {
+    flex-basis: auto;
+    width: 100%;
+  }
+
+  .header__left {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.3rem;
+    order: 2;
+  }
+  .header__left > h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .header__left p {
+    color: var(--Grayish_Blue);
+    width: 100%;
+  }
+
+  .left__buttons {
+    margin: auto;
+    padding: 1rem 0 0;
+  }
+  .button__chrom,
+  .button__firefox {
+    padding: 0.7rem 1rem;
+  }
+
+  .header__right {
+    width: auto;
+    height: auto;
+    z-index: 99;
+  }
+  .header__right img {
+    width: 100%;
+  }
+  .header__right::before {
+    content: "";
+    background-color: var(--Soft_Blue);
+    width: 100%;
+    margin-top: 3.5rem;
+  }
 }
 
 /* ****Styling the Feature Desktop **** */
