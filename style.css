@@ -15,14 +15,7 @@ p {
   line-height: 1.5;
   opacity: 85%;
 }
-@media screen and (max-width: 1300px) {
-  body {
-    font-size: 14px;
-  }
-  p {
-    font-size: 14px;
-  }
-}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -42,6 +35,18 @@ img {
   font-size: 14px;
 }
 
+@media screen and (max-width: 1300px) {
+  body {
+    font-size: 14px;
+  }
+  p {
+    font-size: 14px;
+  }
+  h2 {
+    font-size: 23px;
+    font-weight: 700;
+  }
+}
 /* **** Styling the Desktop menue **** */
 .app {
   width: 100%;
@@ -216,7 +221,7 @@ img {
   }
 
   .header__left {
-    margin-top: 3rem;
+    margin-top: 2.6rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -235,7 +240,8 @@ img {
 
   .left__buttons {
     margin: auto;
-    padding: 1rem 0 0;
+    padding: 0.3rem 0 0;
+    /* flex-wrap: wrap; */
   }
   .button__chrom,
   .button__firefox {
@@ -355,6 +361,70 @@ img {
   color: var(--White);
 }
 
+/* Styling the feauture for verions mobile  */
+@media (max-width: 1300px) {
+  .app__feature {
+    width: 100%;
+    padding: 6rem 2rem;
+  }
+
+  .app__feature > p {
+    width: 100%;
+  }
+
+  .feature_tabs {
+    margin-top: 0rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    border-top: 0.1px solid var(--Grayish_Blue);
+    width: 100%;
+    align-items: center;
+  }
+
+  .feature_tabs div {
+    padding: 1rem 0;
+    text-align: center;
+    border-bottom: 0.1px solid var(--Grayish_Blue);
+  }
+
+  .feature_tabs_detaills {
+    padding-top: 1rem;
+  }
+
+  .detaill {
+    flex-direction: column;
+    width: 100%;
+    padding-top: 3rem;
+    gap: 3.5rem;
+  }
+
+  .detaill__left,
+  .detaill__right {
+    flex-basis: none;
+    position: relative;
+    height: auto;
+    width: 100%;
+  }
+  .detaill__left img {
+    width: 100%;
+  }
+  .detaill__left::before {
+    content: "";
+    margin: 2.11rem 0 6rem -12rem;
+  }
+
+  .detaill__right {
+    width: 100%;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .detaill__right > div {
+    display: none;
+  }
+}
+
 /* **** Styling the Extension Desktop ***** */
 
 .app__extensions {
@@ -442,7 +512,38 @@ img {
   transition: 0.4s ease;
 }
 
-/* Styling the questions Desktop  */
+/* Styling the extension version mobile  */
+@media (max-width: 1300px) {
+  .app__extensions {
+    padding: 6rem 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .extension__header {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  .extension__header h2 {
+    font-weight: 700;
+  }
+  .extension__header p {
+    width: 100%;
+  }
+
+  .extension__browsers {
+    grid-template-columns: none;
+    grid-template-rows: repeat(3, auto);
+    gap: 0.5rem;
+    padding: 0;
+  }
+}
+
+/* ****  Styling the questions Desktop **** */
 .app__questions {
   padding-top: 10rem;
   padding-bottom: 6rem;
@@ -501,8 +602,25 @@ img {
   margin-top: 4rem;
   margin-bottom: 4rem;
 }
+/* **** Styling the question design for mobile **** */
+@media (max-width: 1300px) {
+  .app__questions {
+    padding: 8rem 2rem;
+    display: flex;
+    width: 100%;
+  }
+  .questions__header {
+    width: 100%;
+  }
+  .questions__header P {
+    width: 100%;
+  }
+  .questions > div:nth-child(1) {
+    border-top: none;
+  }
+}
 
-/* Stlying the prefooter Desktop  */
+/* **** Stlying the prefooter Desktop *****/
 .app__prefooter {
   background-color: var(--Soft_Blue);
   padding: 5rem 0;
@@ -559,7 +677,7 @@ input {
   color: var(--Soft_Red);
 }
 
-/* Styling the footer Desktop */
+/* ***Styling the footer Desktop  *****/
 .app__footer {
   display: flex;
   background-color: var(--Very_Dark_Blue);
