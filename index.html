@@ -77,12 +77,16 @@
           them on the go.
         </p>
         <div class="feature_tabs">
-          <div class="tab_Bookmarking">Simple Bookmarking</div>
-          <div class="tab_searching">Speedy Searching</div>
-          <div class="tab_sharing">Easy Sharing</div>
+          <div class="tab active" onclick="show(event, 'bookmark' )">
+            Simple Bookmarking
+          </div>
+          <div class="tab" onclick="show(event, 'search')">
+            Speedy Searching
+          </div>
+          <div class="tab" onclick="show(event, 'sharing')">Easy Sharing</div>
         </div>
         <div class="feature_tabs_detaills">
-          <div class="detaill">
+          <div class="detaill" id="bookmark">
             <div class="detaill__left">
               <img
                 src="./images/illustration-features-tab-1.svg"
@@ -99,7 +103,7 @@
               <div class="detaill__button">More Info</div>
             </div>
           </div>
-          <div class="detaill">
+          <div class="detaill" id="search">
             <div class="detaill__left">
               <img
                 src="./images/illustration-features-tab-2.svg"
@@ -115,7 +119,7 @@
               <div class="detaill__button">More Info</div>
             </div>
           </div>
-          <div class="detaill">
+          <div class="detaill" id="sharing">
             <div class="detaill__left">
               <img
                 src="./images/illustration-features-tab-3.svg"
@@ -270,5 +274,7 @@
         </div>
       </div>
     </div>
+
+    <script src="./index.js"></script>
   </body>
 </html>

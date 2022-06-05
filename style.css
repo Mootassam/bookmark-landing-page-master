@@ -35,7 +35,7 @@ img {
   font-size: 14px;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 900px) {
   body {
     font-size: 14px;
   }
@@ -99,7 +99,7 @@ img {
 }
 
 /* Styling the mobile Version */
-@media (max-width: 1300px) {
+@media (max-width: 900px) {
   .app__menue {
     flex-direction: row;
     padding: 2rem 1rem;
@@ -207,7 +207,7 @@ img {
 
 /* ****Styling the header verion Mobile ***** */
 
-@media (max-width: 1300px) {
+@media (max-width: 900px) {
   .app__header {
     display: flex;
     flex-direction: column;
@@ -299,10 +299,7 @@ img {
 }
 .feature_tabs div:hover {
   color: var(--Soft_Red);
-}
-.feature_tabs div:nth-child(1) {
-  color: var(--Very_Dark_Blue);
-  border-bottom: 2px solid var(--Soft_Red);
+  transition: 0.3s ease;
 }
 
 .feature_tabs_detaills {
@@ -311,7 +308,11 @@ img {
   flex-direction: column;
   padding-top: 1rem;
 }
-
+.active {
+  padding: 1.5rem;
+  color: var(--Soft_Red);
+  border-bottom: 2.3px solid var(--Soft_Red);
+}
 .detaill {
   display: flex;
   padding-top: 3.5rem;
@@ -362,7 +363,7 @@ img {
 }
 
 /* Styling the feauture for verions mobile  */
-@media (max-width: 1300px) {
+@media (max-width: 900px) {
   .app__feature {
     width: 100%;
     padding: 6rem 2rem;
@@ -513,7 +514,7 @@ img {
 }
 
 /* Styling the extension version mobile  */
-@media (max-width: 1300px) {
+@media (max-width: 900px) {
   .app__extensions {
     padding: 6rem 2rem;
 
@@ -603,7 +604,7 @@ img {
   margin-bottom: 4rem;
 }
 /* **** Styling the question design for mobile **** */
-@media (max-width: 1300px) {
+@media (max-width: 900px) {
   .app__questions {
     padding: 8rem 2rem;
     display: flex;
@@ -678,7 +679,7 @@ input {
 }
 
 /* **** Styling the prefooter section for mobile **** */
-@media (max-width: 1300px) {
+@media (max-width: 900px) {
   .app__prefooter {
     padding: 3rem 2rem;
     align-items: center;
@@ -749,7 +750,7 @@ input {
 
 /* **** Styling the footer Section for the mobile ***** */
 
-@media (max-width: 1300px) {
+@media (max-width: 900px) {
   .app__footer {
     display: flex;
     padding: 2rem;
