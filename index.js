@@ -31,13 +31,6 @@ menue_close.style.display = "none";
 
 let image_blue = document.getElementById("blue");
 let image_white = document.getElementById("white");
-const showMenue = () => {
-  menue_hamburger.style.display = "none";
-  menue__nav.style.display = "flex";
-  menue_close.style.display = "block";
-  image_white.style.display = "block";
-  image_blue.style.display = "none";
-};
 const hidMenue = () => {
   menue_hamburger.style.display = "block";
   menue__nav.style.display = "none";
@@ -45,3 +38,25 @@ const hidMenue = () => {
   image_white.style.display = "none";
   image_blue.style.display = "block";
 };
+const showMenue = () => {
+  menue_hamburger.style.display = "none";
+  menue_close.style.display = "block";
+  image_white.style.display = "block";
+  image_blue.style.display = "none";
+  menue__nav.style.display = "flex";
+};
+var media_query = "screen and (max-width:900px)";
+
+// event to watch the media query
+window.matchMedia(media_query).addEventListener("change", function () {
+  // matched or not
+  var matched = this.matches;
+
+  if (matched) {
+    menue__nav.style.display = "none";
+  } else {
+    image_blue.style.display = "block";
+    image_white.style.display = "none";
+    menue__nav.style.display = "flex";
+  }
+});
