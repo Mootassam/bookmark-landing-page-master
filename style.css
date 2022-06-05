@@ -593,7 +593,14 @@ img {
   width: 15px;
   height: 11px;
 }
+.active_image {
+  margin-right: 2rem;
+  width: 15px;
+  height: 11px;
+  transform: rotate(180deg);
+}
 .answer {
+  margin-top: 1.6rem;
   display: none;
 }
 
