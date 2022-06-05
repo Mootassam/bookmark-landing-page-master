@@ -46,7 +46,7 @@ const showMenue = () => {
   image_blue.style.display = "none";
   menue__nav.style.display = "flex";
 };
-var media_query = "screen and (max-width:900px)";
+var media_query = "screen and (max-width:1024px)";
 
 // event to watch the media query
 window.matchMedia(media_query).addEventListener("change", function () {

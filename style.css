@@ -35,7 +35,7 @@ img {
   font-size: 14px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1024px) {
   body {
     font-size: 14px;
   }
@@ -106,9 +106,16 @@ img {
 .menue__logo img:first-child {
   display: none;
 }
+/* Styling the version of tablet */
+@media screen and (max-width: 1300px) and (min-width: 1024px) {
+  .app__menue {
+    flex-direction: row;
+    padding: 3rem;
+  }
+}
 
 /* Styling the mobile Version */
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
   .app__menue {
     flex-direction: row;
     padding: 2rem 1rem;
@@ -272,8 +279,12 @@ img {
 }
 
 /* ****Styling the header verion Mobile ***** */
-
-@media (max-width: 900px) {
+@media screen and (max-width: 1300px) and (min-width: 1024px) {
+  .app__header {
+    padding: 2rem;
+  }
+}
+@media (max-width: 1024px) {
   .app__header {
     display: flex;
     flex-direction: column;
@@ -429,7 +440,13 @@ img {
 }
 
 /* Styling the feauture for verions mobile  */
-@media (max-width: 900px) {
+
+@media screen and (max-width: 1300px) and (min-width: 1024px) {
+  .app__feature {
+    padding: 6rem 3rem;
+  }
+}
+@media (max-width: 1024px) {
   .app__feature {
     width: 100%;
     padding: 6rem 2rem;
@@ -452,6 +469,7 @@ img {
   .feature_tabs div {
     padding: 1rem 0;
     text-align: center;
+    width: 100%;
     border-bottom: 0.1px solid var(--Grayish_Blue);
   }
 
@@ -580,7 +598,14 @@ img {
 }
 
 /* Styling the extension version mobile  */
-@media (max-width: 900px) {
+
+@media screen and (max-width: 1300px) and (min-width: 1024px) {
+  .app__extensions {
+    width: 100%;
+    padding: 6rem 3rem;
+  }
+}
+@media (max-width: 1024px) {
   .app__extensions {
     padding: 6rem 2rem;
 
@@ -678,7 +703,14 @@ img {
   margin-bottom: 4rem;
 }
 /* **** Styling the question design for mobile **** */
-@media (max-width: 900px) {
+
+@media screen and (max-width: 1300px) and (min-width: 1024px) {
+  .app__extensions {
+    width: 100%;
+    padding: 6rem 3rem;
+  }
+}
+@media (max-width: 1024px) {
   .app__questions {
     padding: 8rem 2rem;
     display: flex;
@@ -753,7 +785,13 @@ input {
 }
 
 /* **** Styling the prefooter section for mobile **** */
-@media (max-width: 900px) {
+@media screen and (max-width: 1300px) and (min-width: 1024px) {
+  .app__prefooter {
+    width: 100%;
+    padding: 4rem 0rem;
+  }
+}
+@media (max-width: 1024px) {
   .app__prefooter {
     padding: 3rem 2rem;
     align-items: center;
@@ -823,8 +861,13 @@ input {
 }
 
 /* **** Styling the footer Section for the mobile ***** */
-
-@media (max-width: 900px) {
+@media screen and (max-width: 1300px) and (min-width: 1024px) {
+  .app__footer {
+    width: 100%;
+    padding: 2rem 3rem;
+  }
+}
+@media (max-width: 1024px) {
   .app__footer {
     display: flex;
     padding: 2rem;
