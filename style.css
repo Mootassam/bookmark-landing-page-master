@@ -63,6 +63,7 @@ img {
   width: min(1400px, 95%);
   margin-inline: auto;
 }
+
 .menue__nav ul {
   display: flex;
   width: 100%;
@@ -81,7 +82,6 @@ img {
   padding: 0.6rem 1.7rem;
   color: var(--White);
   border-radius: 4px;
-
   box-shadow: 0 2px 3px 1px rgb(0 0 0 / 10%);
 }
 .menue__nav ul li:last-child:hover {
@@ -98,14 +98,80 @@ img {
   display: none;
 }
 
+.menue__nav {
+  display: flex;
+}
+.menue__logo img:last-child {
+  display: block;
+}
+.menue__logo img:first-child {
+  display: none;
+}
+
 /* Styling the mobile Version */
 @media (max-width: 900px) {
   .app__menue {
     flex-direction: row;
     padding: 2rem 1rem;
   }
+
+  .menue__logo > img:first-child {
+    display: block;
+    position: relative;
+    z-index: 115;
+  }
+
+  #menue_close {
+    display: block;
+    position: relative;
+    z-index: 101;
+  }
+  .menue__logo img:first-child {
+    display: none;
+  }
   .menue__nav {
     display: none;
+    position: absolute;
+    flex-direction: column;
+    background-color: var(--Very_Dark_Blue);
+    height: 100vh;
+    z-index: 100;
+    width: 100%;
+    right: 0;
+    top: 0;
+    justify-content: center;
+    opacity: 95%;
+  }
+  .menue__nav ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: var(--White);
+    gap: 0rem;
+    align-self: center;
+    width: 80%;
+  }
+  .menue__nav ul li:first-child {
+    border-top: 0.1px solid var(--background__button);
+  }
+  .menue__nav ul li:nth-child(-n + 3) {
+    color: var(--White);
+    width: 100%;
+    margin: 0;
+    padding: 1rem 0;
+    justify-self: center;
+    border-bottom: 0.1px solid var(--background__button);
+  }
+  .menue__nav ul li:last-child {
+    display: inline-block;
+    background-color: transparent;
+    border: 1px solid var(--White);
+    padding: 0.6rem auto;
+    width: 100%;
+    margin-top: 1rem;
+    color: var(--White);
+    border-radius: 4px;
+    box-shadow: 0 2px 3px 1px rgb(0 0 0 / 10%);
   }
   .menue__mobile {
     display: flex;
@@ -113,6 +179,7 @@ img {
 }
 
 /* **** Styling Header Desktop **** */
+
 .app__header {
   display: flex;
   padding: 3.5rem 1rem 6rem 8.2rem;
@@ -602,6 +669,7 @@ img {
 .answer {
   margin-top: 1.6rem;
   display: none;
+  transition: 0.4s ease;
 }
 
 .app__questions > div:nth-child(3) {

@@ -22,3 +22,26 @@ const active = (event, idName) => {
   }
   document.getElementById(idName).style.display = "flex";
 };
+
+let menue_hamburger = document.getElementById("menue_hamburger");
+let menue_close = document.getElementById("menue_close");
+// menue_close.style.display = "none";
+let menue__nav = document.querySelector(".menue__nav");
+menue_close.style.display = "none";
+
+let image_blue = document.getElementById("blue");
+let image_white = document.getElementById("white");
+const showMenue = () => {
+  menue_hamburger.style.display = "none";
+  menue__nav.style.display = "flex";
+  menue_close.style.display = "block";
+  image_white.style.display = "block";
+  image_blue.style.display = "none";
+};
+const hidMenue = () => {
+  menue_hamburger.style.display = "block";
+  menue__nav.style.display = "none";
+  menue_close.style.display = "none";
+  image_white.style.display = "none";
+  image_blue.style.display = "block";
+};
