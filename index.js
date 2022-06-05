@@ -28,6 +28,7 @@ let menue_close = document.getElementById("menue_close");
 // menue_close.style.display = "none";
 let menue__nav = document.querySelector(".menue__nav");
 menue_close.style.display = "none";
+menue_hamburger.style.display = "block";
 
 let image_blue = document.getElementById("blue");
 let image_white = document.getElementById("white");
@@ -54,6 +55,7 @@ window.matchMedia(media_query).addEventListener("change", function () {
 
   if (matched) {
     menue__nav.style.display = "none";
+    menue_hamburger.style.display = "block";
   } else {
     image_blue.style.display = "block";
     image_white.style.display = "none";
